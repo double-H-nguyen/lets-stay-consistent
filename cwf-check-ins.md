@@ -7,6 +7,11 @@ This is a log of what I posted to `#check-ins` channel on the CWF's Discord.
 * Created initial project files
 
 ## Week 1 (5/4/20 - 5/10/20)
+* Update libraries
+* Add Entity Framework (EF6)
+* Add models based on initial design
+* Use EF to create tables in localDb
+* Add test data
 
 ## Week 2 (5/11/20 - 5/17/20)
 
