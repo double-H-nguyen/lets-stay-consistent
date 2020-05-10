@@ -132,6 +132,10 @@
     <Compile Include="Migrations\202005102125153_InitialModel.designer.cs">
       <DependentUpon>202005102125153_InitialModel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202005102137240_AddTestData.cs" />
+    <Compile Include="Migrations\202005102137240_AddTestData.designer.cs">
+      <DependentUpon>202005102137240_AddTestData.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="App_Start\BundleConfig.cs" />
@@ -302,6 +306,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202005102125153_InitialModel.resx">
       <DependentUpon>202005102125153_InitialModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202005102137240_AddTestData.resx">
+      <DependentUpon>202005102137240_AddTestData.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

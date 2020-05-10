@@ -82,3 +82,4 @@ C:\Users\nguye\source\repos\lets-stay-consistent\LetsStayConsistent\obj\Debug\Le
 C:\Users\nguye\source\repos\lets-stay-consistent\LetsStayConsistent\obj\Debug\LetsStayConsistent.pdb
 C:\Users\nguye\source\repos\lets-stay-consistent\LetsStayConsistent\obj\Debug\LetsStayConsistent.Migrations.InitialModel.resources
 C:\Users\nguye\source\repos\lets-stay-consistent\LetsStayConsistent\obj\Debug\LetsStayConsistent.csproj.GenerateResource.cache
+C:\Users\nguye\source\repos\lets-stay-consistent\LetsStayConsistent\obj\Debug\LetsStayConsistent.Migrations.AddTestData.resources
