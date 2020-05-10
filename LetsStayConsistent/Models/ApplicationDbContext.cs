@@ -1,5 +1,6 @@
 namespace LetsStayConsistent
 {
+    using LetsStayConsistent.Models;
     using System;
     using System.Data.Entity;
     using System.Linq;
@@ -21,11 +22,8 @@ namespace LetsStayConsistent
         // on configuring and using a Code First model, see http://go.microsoft.com/fwlink/?LinkId=390109.
 
         // public virtual DbSet<MyEntity> MyEntities { get; set; }
-    }
 
-    //public class MyEntity
-    //{
-    //    public int Id { get; set; }
-    //    public string Name { get; set; }
-    //}
+        public DbSet<Goal> Goals { get; set; }
+        public DbSet<GoalLog> GoalLogs { get; set; }
+    }
 }
