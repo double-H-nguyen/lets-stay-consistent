@@ -14,6 +14,8 @@ This is a log of what I posted to `#check-ins` channel on the CWF's Discord.
 * Add test data
 
 ## Week 2 (5/11/20 - 5/17/20)
+* Learned about the disposing dbContext (TLDR: good practice, but not required)
+* Create test action and view to test querying ability
 
 ## Week 3 (5/18/20 - 5/24/20)
 
