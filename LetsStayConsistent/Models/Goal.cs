@@ -15,6 +15,6 @@ namespace LetsStayConsistent.Models
         [Required]
         public string Reward { get; set; }
 
-        List<GoalLog> GoalLogs { get; set; }
+        public List<GoalLog> GoalLogs { get; set; }
     }
 }
