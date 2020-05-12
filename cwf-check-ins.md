@@ -16,6 +16,8 @@ This is a log of what I posted to `#check-ins` channel on the CWF's Discord.
 ## Week 2 (5/11/20 - 5/17/20)
 * Learned about the disposing dbContext (TLDR: good practice, but not required)
 * Create test action and view to test querying ability
+* Update EF to v6.4
+* Update navbar
 
 ## Week 3 (5/18/20 - 5/24/20)
 
