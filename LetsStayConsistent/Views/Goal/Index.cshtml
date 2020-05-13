@@ -1,0 +1,30 @@
+﻿@model LetsStayConsistent.ViewModels.GoalIndexViewModel
+
+<div class="mt-5">
+    @Html.ActionLink("Add New Goal", "", "", null, new { @class = "btn btn-dark btn-lg mb-3" })
+
+    <h2>Goals in Database</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">DaysToComplete</th>
+                <th scope="col">Reward</th>
+                <th scope="col">Logs Count</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var goal in Model.Goals)
+            {
+                <tr>
+                    <td>@goal.Id</td>
+                    <td>@goal.Name</td>
+                    <td>@goal.DaysToComplete</td>
+                    <td>@goal.Reward</td>
+                    <td>@goal.GoalLogs.Count()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
