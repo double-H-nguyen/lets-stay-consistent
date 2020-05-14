@@ -22,7 +22,6 @@ namespace LetsStayConsistent.Controllers
             _context.Dispose();
         }
 
-        // GET: Goal
         public ActionResult Index()
         {
             // Query all goals in database
@@ -40,6 +39,33 @@ namespace LetsStayConsistent.Controllers
             };
 
             return View(model);
+        }
+
+        public ActionResult Add()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Add(GoalAddViewModel form)
+        {
+            // verify
+            if (!ModelState.IsValid)
+            {
+                return View("Add", form);
+            }
+
+            var goal = new Goal
+            {
+                Name = form.Name,
+                DaysToComplete = form.DaysToComplete,
+                Reward = form.Reward
+            };
+
+            _context.Goals.Add(goal);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Goal");
         }
     }
 }

@@ -18,6 +18,9 @@ This is a log of what I posted to `#check-ins` channel on the CWF's Discord.
 * Create test action and view to test querying ability
 * Update EF to v6.4
 * Update navbar
+* Create initial home page view
+* Create initial goal page
+* Add ability to create new goals
 
 ## Week 3 (5/18/20 - 5/24/20)
 
