@@ -47,22 +47,62 @@ namespace LetsStayConsistent.Controllers
         }
 
         [HttpPost]
-        public ActionResult Add(GoalAddViewModel form)
+        public ActionResult Add(GoalAddViewModel model)
         {
-            // verify
             if (!ModelState.IsValid)
             {
-                return View("Add", form);
+                return View("Add", model);
             }
 
             var goal = new Goal
             {
-                Name = form.Name,
-                DaysToComplete = form.DaysToComplete,
-                Reward = form.Reward
+                Name = model.Goal.Name,
+                DaysToComplete = model.Goal.DaysToComplete,
+                Reward = model.Goal.Reward
             };
 
             _context.Goals.Add(goal);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Goal");
+        }
+
+        public ActionResult Edit(int id)
+        {
+            Goal goal = _context.Goals.SingleOrDefault(item => item.Id == id);
+
+            if (goal == null)
+            {
+                return RedirectToAction("Index", "Goal");
+            }
+
+            var model = new GoalEditViewModel
+            {
+                Goal = goal
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(GoalEditViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View("Edit", model);
+            }
+
+            Goal goalInDb = _context.Goals.SingleOrDefault(item => item.Id == model.Goal.Id);
+
+            if (goalInDb == null)
+            {
+                return RedirectToAction("Index", "Goal");
+            }
+
+            goalInDb.Name = model.Goal.Name;
+            goalInDb.DaysToComplete = model.Goal.DaysToComplete;
+            goalInDb.Reward = model.Goal.Reward;
+
             _context.SaveChanges();
 
             return RedirectToAction("Index", "Goal");

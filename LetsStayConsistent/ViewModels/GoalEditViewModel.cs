@@ -7,7 +7,7 @@ using System.Web;
 
 namespace LetsStayConsistent.ViewModels
 {
-    public class GoalAddViewModel
+    public class GoalEditViewModel
     {
         public Goal Goal { get; set; }
     }

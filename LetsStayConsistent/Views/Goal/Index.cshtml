@@ -12,6 +12,7 @@
                 <th scope="col">DaysToComplete</th>
                 <th scope="col">Reward</th>
                 <th scope="col">Logs Count</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -23,6 +24,7 @@
                     <td>@goal.DaysToComplete</td>
                     <td>@goal.Reward</td>
                     <td>@goal.GoalLogs.Count()</td>
+                    <td>@Html.ActionLink("Edit", "Edit", "Goal", new { id = goal.Id }, null)</td>
                 </tr>
             }
         </tbody>

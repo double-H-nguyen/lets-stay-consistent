@@ -10,26 +10,26 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Name, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Goal.Name, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBoxFor(model => model.Name, new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(model => model.Goal.Name, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Goal.Name, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.DaysToComplete, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Goal.DaysToComplete, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextBoxFor(model => model.DaysToComplete, new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.DaysToComplete, "", new { @class = "text-danger" })
+                @Html.TextBoxFor(model => model.Goal.DaysToComplete, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Goal.DaysToComplete, "", new { @class = "text-danger" })
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Reward, new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Goal.Reward, new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.TextAreaFor(model => model.Reward, new { @class = "form-control" })
-                @Html.ValidationMessageFor(model => model.Reward, "", new { @class = "text-danger" })
+                @Html.TextAreaFor(model => model.Goal.Reward, new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.Goal.Reward, "", new { @class = "text-danger" })
             </div>
         </div>
 
