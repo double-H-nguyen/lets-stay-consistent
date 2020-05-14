@@ -22,6 +22,7 @@ This is a log of what I posted to `#check-ins` channel on the CWF's Discord.
 * Create initial goal page
 * Add ability to create new goals
 * Add ability to edit existing goals
+* Add ability to delete existing goals
 
 ## Week 3 (5/18/20 - 5/24/20)
 

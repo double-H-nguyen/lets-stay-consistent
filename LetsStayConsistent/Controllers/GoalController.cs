@@ -107,5 +107,22 @@ namespace LetsStayConsistent.Controllers
 
             return RedirectToAction("Index", "Goal");
         }
+
+        [HttpDelete]
+        public ActionResult Delete(int id)
+        {
+            Goal goalInDb = _context.Goals.SingleOrDefault(item => item.Id == id);
+
+            if (goalInDb == null)
+            {
+                return RedirectToAction("Index", "Goal");
+            }
+
+            _context.Goals.Remove(goalInDb);
+            _context.SaveChanges();
+
+            // why does this not execute?
+            return RedirectToAction("Index", "Goal");
+        }
     }
 }
