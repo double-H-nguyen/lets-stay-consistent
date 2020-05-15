@@ -124,5 +124,25 @@ namespace LetsStayConsistent.Controllers
             // why does this not execute?
             return RedirectToAction("Index", "Goal");
         }
+
+        public ActionResult Details(int id)
+        {
+            Goal goalInDb = _context.Goals.SingleOrDefault(g => g.Id == id);
+
+            if (goalInDb == null)
+            {
+                return RedirectToAction("Index", "Goal");
+            }
+
+            List<GoalLog> goalLogs = _context.GoalLogs.Where(log => log.GoalId == goalInDb.Id).ToList();
+
+            var model = new GoalDetailsViewModel
+            {
+                Goal = goalInDb,
+                GoalLogs = goalLogs
+            };
+
+            return View(model);
+        }
     }
 }

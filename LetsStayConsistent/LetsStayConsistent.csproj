@@ -149,6 +149,7 @@
     <Compile Include="Models\Goal.cs" />
     <Compile Include="Models\GoalLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\GoalDetailsViewModel.cs" />
     <Compile Include="ViewModels\GoalEditViewModel.cs" />
     <Compile Include="ViewModels\GoalAddViewModel.cs" />
     <Compile Include="ViewModels\GoalIndexViewModel.cs" />
@@ -298,6 +299,7 @@
     <Content Include="Views\Goal\Index.cshtml" />
     <Content Include="Views\Goal\Add.cshtml" />
     <Content Include="Views\Goal\Edit.cshtml" />
+    <Content Include="Views\Goal\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

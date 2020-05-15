@@ -7,11 +7,11 @@
     <table class="table table-striped">
         <thead>
             <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Name</th>
-                <th scope="col">DaysToComplete</th>
-                <th scope="col">Reward</th>
-                <th scope="col">Logs Count</th>
+                <th scope="col">@Html.LabelFor(m => m.Goals[0].Id)</th>
+                <th scope="col">@Html.LabelFor(m => m.Goals[0].Name)</th>
+                <th scope="col">@Html.LabelFor(m => m.Goals[0].DaysToComplete)</th>
+                <th scope="col">@Html.LabelFor(m => m.Goals[0].Reward)</th>
+                <th scope="col">Number of logs</th>
                 <th></th>
             </tr>
         </thead>
@@ -20,7 +20,7 @@
             {
                 <tr>
                     <td>@goal.Id</td>
-                    <td>@goal.Name</td>
+                    <td>@Html.ActionLink(goal.Name, "Details", "Goal", new { id = goal.Id}, null)</td>
                     <td>@goal.DaysToComplete</td>
                     <td>@goal.Reward</td>
                     <td>@goal.GoalLogs.Count()</td>
