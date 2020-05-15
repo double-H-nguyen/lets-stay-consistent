@@ -25,6 +25,7 @@ This is a log of what I posted to `#check-ins` channel on the CWF's Discord.
 * Add ability to delete existing goals
 * Add labels attribute for models
 * Create initial goal's details view
+* Create initial logs view
 
 ## Week 3 (5/18/20 - 5/24/20)
 

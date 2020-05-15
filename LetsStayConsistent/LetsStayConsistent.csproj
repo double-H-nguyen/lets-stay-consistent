@@ -129,6 +129,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\GoalController.cs" />
+    <Compile Include="Controllers\LogsController.cs" />
     <Compile Include="Migrations\202005102125153_InitialModel.cs" />
     <Compile Include="Migrations\202005102125153_InitialModel.designer.cs">
       <DependentUpon>202005102125153_InitialModel.cs</DependentUpon>
@@ -153,6 +154,7 @@
     <Compile Include="ViewModels\GoalEditViewModel.cs" />
     <Compile Include="ViewModels\GoalAddViewModel.cs" />
     <Compile Include="ViewModels\GoalIndexViewModel.cs" />
+    <Compile Include="ViewModels\LogsIndexViewModel.cs" />
     <Compile Include="ViewModels\TestViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -300,6 +302,7 @@
     <Content Include="Views\Goal\Add.cshtml" />
     <Content Include="Views\Goal\Edit.cshtml" />
     <Content Include="Views\Goal\Details.cshtml" />
+    <Content Include="Views\Logs\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
