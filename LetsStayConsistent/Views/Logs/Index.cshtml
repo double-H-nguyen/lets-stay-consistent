@@ -31,7 +31,13 @@
                     <td>@log.GoalId</td>
                     <td>
                         @Html.ActionLink("Edit", "Edit", "Logs", new { id = log.Id }, null) |
-                        Delete
+                        @Ajax.ActionLink("Delete", "Delete", "Logs", new { id = log.Id },
+                                        new AjaxOptions
+                                        {
+                                            HttpMethod = "Delete",
+                                            Confirm = "Are you sure you want to delete this log? This cannot be undone.",
+                                            OnComplete = "location.reload()"
+                                        })
                     </td>
                 </tr>
             }

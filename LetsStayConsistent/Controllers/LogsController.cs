@@ -119,5 +119,21 @@ namespace LetsStayConsistent.Controllers
 
             return RedirectToAction("Index", "Logs");
         }
+
+        [HttpDelete]
+        public ActionResult Delete(int id)
+        {
+            var goalLogInDb = _context.GoalLogs.SingleOrDefault(item => item.Id == id);
+
+            if (goalLogInDb == null)
+            {
+                return RedirectToAction("Index", "Logs");
+            }
+
+            _context.GoalLogs.Remove(goalLogInDb);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Logs");
+        }
     }
 }

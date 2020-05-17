@@ -28,6 +28,7 @@ This is a log of what I posted to `#check-ins` channel on the CWF's Discord.
 * Create initial logs view
 * Create form to add goal logs
 * Add ability to edit goal logs
+* Added ability to delete goal logs
 
 ## Week 3 (5/18/20 - 5/24/20)
 
