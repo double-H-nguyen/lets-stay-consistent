@@ -28,7 +28,8 @@
                     {
                         <td>No</td>
                     }
-                    <td>@log.GoalId</td>
+                    @*<td>@log.GoalId</td>*@
+                    <td>@Html.ActionLink(log.GoalId.ToString(), "Details", "Goal", new { id = log.GoalId}, null)</td>
                     <td>
                         @Html.ActionLink("Edit", "Edit", "Logs", new { id = log.Id }, null) |
                         @Ajax.ActionLink("Delete", "Delete", "Logs", new { id = log.Id },
