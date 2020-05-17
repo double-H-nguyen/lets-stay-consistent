@@ -156,6 +156,7 @@
     <Compile Include="ViewModels\GoalAddViewModel.cs" />
     <Compile Include="ViewModels\GoalIndexViewModel.cs" />
     <Compile Include="ViewModels\LogsAddViewModel.cs" />
+    <Compile Include="ViewModels\LogsEditViewModel.cs" />
     <Compile Include="ViewModels\LogsIndexViewModel.cs" />
     <Compile Include="ViewModels\TestViewModel.cs" />
   </ItemGroup>
@@ -306,6 +307,7 @@
     <Content Include="Views\Goal\Details.cshtml" />
     <Content Include="Views\Logs\Index.cshtml" />
     <Content Include="Views\Logs\Add.cshtml" />
+    <Content Include="Views\Logs\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -15,12 +15,12 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var goalLogs in Model.GoalLogs)
+            @foreach (var log in Model.GoalLogs)
             {
                 <tr>
-                    <td>@goalLogs.Id</td>
-                    <td>@goalLogs.Date.ToString("MM/dd/yyyy")</td>
-                    @if (goalLogs.WasCompleted)
+                    <td>@log.Id</td>
+                    <td>@log.Date.ToString("MM/dd/yyyy")</td>
+                    @if (log.WasCompleted)
                     {
                         <td>Yes</td>
                     }
@@ -28,8 +28,11 @@
                     {
                         <td>No</td>
                     }
-                    <td>@goalLogs.GoalId</td>
-                    <td>Edit | Delete</td>
+                    <td>@log.GoalId</td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", "Logs", new { id = log.Id }, null) |
+                        Delete
+                    </td>
                 </tr>
             }
         </tbody>

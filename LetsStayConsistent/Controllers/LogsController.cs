@@ -71,5 +71,53 @@ namespace LetsStayConsistent.Controllers
 
             return RedirectToAction("Index", "Goal");
         }
+
+        public ActionResult Edit(int id)
+        {
+            GoalLog log = _context.GoalLogs.SingleOrDefault(item => item.Id == id);
+
+            if (log == null)
+            {
+                return RedirectToAction("Index", "Logs");
+            }
+
+            var model = new LogsEditViewModel
+            {
+                Goals = LogsUtility.GetGoalDropdown(),
+                GoalLog = log
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public ActionResult Edit(LogsEditViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                var newModel = new LogsEditViewModel
+                {
+                    Goals = LogsUtility.GetGoalDropdown(),
+                    GoalLog = model.GoalLog
+                };
+
+                return View("Edit", newModel);
+            }
+
+            var goalLogInDb = _context.GoalLogs.SingleOrDefault(item => item.Id == model.GoalLog.Id);
+
+            if (goalLogInDb == null)
+            {
+                return RedirectToAction("Index", "Logs");
+            }
+
+            goalLogInDb.Date = model.GoalLog.Date;
+            goalLogInDb.WasCompleted = model.GoalLog.WasCompleted;
+            goalLogInDb.GoalId = model.GoalLog.GoalId;
+
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Logs");
+        }
     }
 }
