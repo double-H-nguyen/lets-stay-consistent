@@ -3,7 +3,7 @@
 <div class="mt-3">
     <h2>Edit Goal</h2>
     <hr />
-    @using (Html.BeginForm())
+    @using (Html.BeginForm("Edit", "Goal", FormMethod.Post))
     {
         @Html.AntiForgeryToken()
 

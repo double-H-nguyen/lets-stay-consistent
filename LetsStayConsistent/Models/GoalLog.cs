@@ -8,7 +8,7 @@ namespace LetsStayConsistent.Models
 {
     public class GoalLog
     {
-        [Display(Name = "Id")]
+        [Display(Name = "Log's id")]
         public int Id { get; set; }
 
         [Display(Name = "Date logged")]
