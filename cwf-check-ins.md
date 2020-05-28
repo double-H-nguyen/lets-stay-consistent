@@ -35,3 +35,4 @@ This is a log of what I posted to `#check-ins` channel on the CWF's Discord.
 ## Week 3 (5/18/20 - 5/24/20)
 
 ## Final Week (5/25/20 - 5/29/20)
+* Created custom date picker

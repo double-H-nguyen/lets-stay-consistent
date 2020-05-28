@@ -26,7 +26,11 @@ namespace LetsStayConsistent
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/LSC-custom-datepicker.css",
                       "~/Content/site.css"));
+
+            bundles.Add(new StyleBundle("~/Scripts/custom").Include(
+                      "~/Scripts/LSC-custom-datepicker.js"));
         }
     }
 }

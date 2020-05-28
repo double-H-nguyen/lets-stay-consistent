@@ -19,7 +19,19 @@
         <div class="form-group">
             @Html.LabelFor(m => m.GoalLog.Date, new { @class = "col-md-2" })
             <div class="col-md-10">
-                @Html.TextBoxFor(m => m.GoalLog.Date, new { @class = "form-control" })
+                <div class="LSC-date-picker">
+                    @Html.TextBoxFor(m => m.GoalLog.Date, new { @class = "form-control selected-date", onchange="UpdateCalendar()" })
+                    
+                    <div class="dates">
+                        <div class="month">
+                            <div class="arrows prev-mth">&lt;</div>
+                            <div class="mth"></div>
+                            <div class="arrows next-mth">&gt;</div>
+                        </div>
+
+                        <div class="days"></div>
+                    </div>
+                </div>
             </div>
         </div>
 
