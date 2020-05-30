@@ -27,10 +27,12 @@ namespace LetsStayConsistent
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/LSC-custom-datepicker.css",
+                      "~/Content/LSC-progress-bar.css",
                       "~/Content/site.css"));
 
             bundles.Add(new StyleBundle("~/Scripts/custom").Include(
-                      "~/Scripts/LSC-custom-datepicker.js"));
+                      "~/Scripts/LSC-custom-datepicker.js",
+                      "~/Scripts/LSC-progress-bar.js"));
         }
     }
 }

@@ -11,5 +11,7 @@ namespace LetsStayConsistent.ViewModels
         public Goal Goal { get; set; }
 
         public List<GoalLog> GoalLogs { get; set; }
+
+        public double ProgressPercentage { get; set; }
     }
 }

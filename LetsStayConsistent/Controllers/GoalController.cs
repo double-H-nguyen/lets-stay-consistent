@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using LetsStayConsistent.Models;
 using LetsStayConsistent.ViewModels;
+using LetsStayConsistent.Utilities;
 
 namespace LetsStayConsistent.Controllers
 {
@@ -136,10 +137,13 @@ namespace LetsStayConsistent.Controllers
 
             List<GoalLog> goalLogs = _context.GoalLogs.Where(log => log.GoalId == goalInDb.Id).ToList();
 
+            double progressPercentage = GoalUtility.CalculateProgressPercentage(goalInDb, goalLogs);
+
             var model = new GoalDetailsViewModel
             {
                 Goal = goalInDb,
-                GoalLogs = goalLogs
+                GoalLogs = goalLogs,
+                ProgressPercentage = progressPercentage
             };
 
             return View(model);

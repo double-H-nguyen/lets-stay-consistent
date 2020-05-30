@@ -150,6 +150,7 @@
     <Compile Include="Models\Goal.cs" />
     <Compile Include="Models\GoalLog.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\GoalUtility.cs" />
     <Compile Include="Utilities\LogsUtility.cs" />
     <Compile Include="ViewModels\GoalDetailsViewModel.cs" />
     <Compile Include="ViewModels\GoalEditViewModel.cs" />
@@ -168,6 +169,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\LSC-custom-datepicker.css" />
+    <Content Include="Content\LSC-progress-bar.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -207,6 +209,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\LSC-custom-datepicker.js" />
+    <Content Include="Scripts\LSC-progress-bar.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
