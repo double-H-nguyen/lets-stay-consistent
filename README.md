@@ -9,12 +9,19 @@ This event was the catalyst I needed to start working on personal projects. It's
 
 ## My Project: "Lets Stay Consistent!"
 ---
-I always had a hard time exercising consistently. I wanted to create a simple web tool that will let me input my goals, log my progress, and keep track of my consistency. This application is far from complete, but I'm happy with the progress I have made so far! I have attached screenshots in the "Screenshots" folder.
+I always had a hard time exercising consistently. I wanted to create a simple web tool that will let me input my goals, log my progress, and keep track of my consistency. This application is far from complete, but I'm happy with the progress I have made so far!
 
-#### Core Technologies used
+#### Technologies used
 * ASP .NET MVC (.NET Framework)
 * Entity Framework
 * Bootstrap
+
+#### Screenshots
+![Screenshot of calendar date-picker](Screenshots/LSC_Goal_Details_Page.jpg)
+![Screenshot of form](Screenshots/LSC_Add_Log1.jpg)
+![Screenshot of calendar date-picker](Screenshots/LSC_Add_Log2.jpg)
+
+[More images in Screenshots folder](Screenshots)
 
 ## What I have learned:
 ---
