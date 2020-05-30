@@ -10,6 +10,7 @@ This event was the catalyst I needed to start working on personal projects. It's
 ## My Project: "Lets Stay Consistent!"
 ---
 I always had a hard time exercising consistently. I wanted to create a simple web tool that will let me input my goals, log my progress, and keep track of my consistency. This application is far from complete, but I'm happy with the progress I have made so far! I have attached screenshots in the "Screenshots" folder.
+
 #### Core Technologies used
 * ASP .NET MVC (.NET Framework)
 * Entity Framework
